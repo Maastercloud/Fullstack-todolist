@@ -119,7 +119,6 @@ app.get("/todos", requireAuth, async (req, res) => {
   }
 });
 
-// Add a todo
 app.post("/todos", requireAuth, async (req, res) => {
   const { text } = req.body;
   if (!text?.trim()) {
